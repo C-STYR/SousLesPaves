@@ -2,6 +2,7 @@ import './styles/App.css';
 import { useState } from 'react';
 import TileInput from './TileInput';
 import TileGenerator from './TileGenerator';
+import ErrorBoundary from './ErrorBoundary'
 
 function App() {
 
@@ -10,8 +11,10 @@ function App() {
 
   return (
     <div className="App">
-      <TileInput tiles={tiles} setTiles={setTiles} />
+    <ErrorBoundary>
+      <TileInput setTiles={setTiles} />
       <TileGenerator tiles={tiles} />
+    </ErrorBoundary>
     </div>
   );
 }

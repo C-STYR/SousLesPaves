@@ -6,7 +6,10 @@ const TileInput = (props) => {
   //local state for the input field
   const [num, setNum] = useState();
 
-  const onChange = (e) => setNum(e.target.value);
+  const onChange = (e) => {
+    let value = +e.target.value;
+    setNum(value);
+  }
 
   //sets the number of tiles to the local state value
   const onClick = () => {
