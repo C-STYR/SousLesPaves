@@ -7,14 +7,10 @@ The Rules:
 5. No partially displayed tiles are allowed
 6. There cannot be more than 12 or fewer than 2 tiles displayed at any time
 7. Provide a mechanism to change the number of tiles
-8. Support screen resizing (explicitly???)
-9. Demo code and provide repo (no deploy, one would guess...)
+8. Support screen resizing
 
 
 The Objective: 
 
 1. Optimize the size and number of tiles to be displayed at any given time on any given screen
 
-Assumptions:
-
-1. "Optimized" means...what exactly?# SousLesPaves
