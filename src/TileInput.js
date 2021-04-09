@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 
+//the mechanism to change the number of tiles
 const TileInput = (props) => {
+  
+  //local state for the input field
   const [num, setNum] = useState();
 
   const onChange = (e) => setNum(e.target.value);
 
+  //sets the number of tiles to the local state value
   const onClick = () => {
     props.setTiles(+num);
   }
